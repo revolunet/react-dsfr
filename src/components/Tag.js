@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '@gouvfr/tags/dist/css/tags.min.css';
 
+/* Tag */
 const Tag = ({
   as, children, sm, href, title, isBlank,
 }) => {
