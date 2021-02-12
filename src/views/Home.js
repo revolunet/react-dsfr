@@ -7,7 +7,7 @@ const Home = () => {
     <section>
       <Button text="Bouton du Gouvernement"/>
       <br />
-      <Tag as="a" href="/" title="titre">Valeur du tag</Tag>
+      <Tag as="a" href="/">Valeur du tag</Tag>
     </section>
   );
 };

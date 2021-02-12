@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '@gouvfr/tags/dist/css/tags.min.css';
 
-/* Tag */
 const Tag = ({
-  as, children, sm, href, title, isBlank,
+  as, children, sm, href, title, isBlank, icon, iconPlace
 }) => {
   let tag = '';
-  let attribute = { className: `rf-tag${sm ? '--sm' : ''}` };
-console.log('as', as);
+  let attribute = { className: `rf-tag${sm ? '--sm' : ''}${(icon) ? ' ' + icon : ''}${(iconPlace) ? ' rf-tag--icon-' + iconPlace : ''}` };
   switch (as) {
     case 'p':
       tag = 'p';
@@ -49,7 +47,7 @@ Tag.defaultProps = {
   isBlank: false,
   theme: 'default',
   icon: '',
-  iconPlace: 'right'
+  iconPlace: ''
 };
 
 Tag.propTypes = {
