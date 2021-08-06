@@ -18,11 +18,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
       - name: Install
-        run: yarn --non-interactive --no-lockfile
+        run: npm coi
       - name: Build
-        run: yarn build
+        run: npm run build
       - name: Test
-        run: yarn test:nowatch
+        run: npm run test:nowatch
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         with:
