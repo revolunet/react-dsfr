@@ -11,6 +11,7 @@ plugins:
       message: "chore(release): version ${nextRelease.version}\n\n${nextRelease.notes}"
   - "@semantic-release/github"
 branches:
-  - name: master
+  - master
+  - name: beta
     prerelease: true
 
