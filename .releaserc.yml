@@ -13,3 +13,4 @@ plugins:
 branches:
   - name: master
     prerelease: true
+
